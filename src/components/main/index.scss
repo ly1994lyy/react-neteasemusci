@@ -71,6 +71,12 @@
   }
 }
 
+.sider-box{
+  height: calc(100vh - 100px) !important;
+  border-right: 0 !important;
+  background: rgb(237,237,237) !important;
+}
+
 .site-layout-background {
   background: #fff;
 }
