@@ -18,7 +18,7 @@ import './index.scss'
 const { SubMenu } = Menu;
 const { Header, Content, Sider,Footer } = Layout;
 
-function Main() {
+function Main(props) {
   return (
     <Layout>
       <Header className="header">
@@ -94,7 +94,7 @@ function Main() {
               margin: "16px 0",
             }}
           >
-            Content
+            {props.children}
           </Content>
         </Layout>
       </Layout>
