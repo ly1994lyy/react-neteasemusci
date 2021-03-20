@@ -15,7 +15,7 @@ function RecommendMv () {
     getMvContent()
   }, [])
   return (
-    <div>
+    <div className="mt-50">
       <h3>推荐MV</h3>
       <Row gutter={16}>
         {

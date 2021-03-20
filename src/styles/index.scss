@@ -9,3 +9,16 @@
     justify-items: center;
     align-items: center;
 }
+
+.mt-50{
+    margin-top: 50px;
+}
+
+.artist-name{
+    font-size: 12px;
+    color: rgb(210, 210, 210);
+    &:hover{
+        font-size: 12px;
+        color: rgb(144,115,115);
+    }
+}

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { getHomePage } from '../../api/homePage'
 import Banner from './components/Banner'
 import RecommendMv from './components/recommendMv/RecommendMv'
+import NewMusic from './components/newMusic/NewMusic'
 
 function HomePage () {
 
@@ -21,6 +22,7 @@ function HomePage () {
   return (
     <div style={{ margin: '0 auto', width: '60vw' }}>
       <Banner bannerList={bannerList}/>
+      <NewMusic />
       <RecommendMv />
     </div>
   )
