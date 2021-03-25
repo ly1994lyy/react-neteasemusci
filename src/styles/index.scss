@@ -1,24 +1,26 @@
-*{
-    box-sizing: border-box;
-    padding:0;
-    margin:0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.flex-center{
-    display: flex;
-    justify-items: center;
-    align-items: center;
+.flex-center {
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
 
-.mt-50{
-    margin-top: 50px;
+.mt-50 {
+  margin-top: 50px;
 }
 
-.artist-name{
+.artist-name {
+  font-size: 12px;
+  color: rgb(210, 210, 210);
+  cursor: pointer;
+
+  &:hover {
     font-size: 12px;
-    color: rgb(210, 210, 210);
-    &:hover{
-        font-size: 12px;
-        color: rgb(144,115,115);
-    }
+    color: rgb(144, 115, 115);
+  }
 }

@@ -3,12 +3,12 @@ import { getNewMusic } from '../../../../api/musci'
 import NewMusicItem from './NewMusicItem'
 
 const musicContainerType = {
-  display:"flex",
-  flexDirection:'column',
-  flexWrap:'wrap',
-  width:'100%',
-  height:'500px',
-  alignContent:'space-between'
+  display: 'flex',
+  flexDirection: 'column',
+  flexWrap: 'wrap',
+  width: '100%',
+  height: '500px',
+  alignContent: 'space-between'
 }
 
 function NewMusic () {
@@ -27,17 +27,19 @@ function NewMusic () {
       <h3>最新音乐</h3>
       <div style={musicContainerType}>
         {
-          musicList.map((item,index) => {
-            if(index<=9){
+          musicList.map((item, index) => {
+            if (index <= 9) {
               return (
-                <NewMusicItem name={item.name} album={item.album} artists={item.artists} index={index} />
+                <NewMusicItem key={item.id} name={item.name} album={item.album} artists={item.artists} index={index}/>
               )
+            } else {
+              return ''
             }
           })
         }
       </div>
     </div>
-)
+  )
 }
 
 export default NewMusic

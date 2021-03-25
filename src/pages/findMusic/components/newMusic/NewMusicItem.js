@@ -14,10 +14,10 @@ const picType = {
   height: '80px'
 }
 
-const indexType={
-  margin:'0 15px',
-  color:'rgb(210,210,210)',
-  fontSize:'10px'
+const indexType = {
+  margin: '0 15px',
+  color: 'rgb(210,210,210)',
+  fontSize: '10px'
 }
 
 function NewMusicItem (props) {

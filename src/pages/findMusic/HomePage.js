@@ -22,8 +22,8 @@ function HomePage () {
   return (
     <div style={{ margin: '0 auto', width: '60vw' }}>
       <Banner bannerList={bannerList}/>
-      <NewMusic />
-      <RecommendMv />
+      <NewMusic/>
+      <RecommendMv/>
     </div>
   )
 }
