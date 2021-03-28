@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles/index.scss'
+import './styles/index.less'
 import Main from './components/main/Main'
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
 import RightContent from './components/content/RightContent'

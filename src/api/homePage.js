@@ -6,6 +6,6 @@ export const getHomePage = () => {
 }
 
 // 获取首页推荐MV
-export const getRecommendMv=()=>{
+export const getRecommendMv = () => {
   return get('personalized/mv')
 }

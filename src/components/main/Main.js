@@ -8,7 +8,7 @@ import {
   TeamOutlined
 } from '@ant-design/icons'
 import React from 'react'
-import './index.scss'
+import './index.less'
 
 const { SubMenu } = Menu
 const { Header, Sider, Footer } = Layout

@@ -1,2 +1,2 @@
-import { get,update,post,del } from '../utils/http'
+import { get, update, post, del } from '../utils/http'
 

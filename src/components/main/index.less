@@ -5,14 +5,17 @@
   padding: 0 !important;
   display: flex;
   background: rgb(215, 77, 69);
+
   &-left {
     width: 250px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .cicle-box {
-        display: flex;
+      display: flex;
+
       .cicle {
         width: 10px;
         height: 10px;
@@ -20,61 +23,72 @@
         border-radius: 50%;
         margin-left: 10px;
         background: green;
+
         &:hover {
           .cicle-ico {
             display: block;
           }
         }
+
         &-ico {
           display: none;
         }
       }
     }
-    .outline-box{
+
+    .outline-box {
       width: auto;
       height: 100%;
       display: flex;
-      .outline{
+
+      .outline {
         margin-right: 10px;
       }
     }
   }
-  &-right{
+
+  &-right {
     display: flex;
     align-items: center;
     flex: 1;
     justify-content: space-between;
-    .top-nav-box{
+
+    .top-nav-box {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      .active{
+
+      .active {
         color: #fff;
       }
-      .nav{
+
+      .nav {
         padding: 0 20px;
         font-size: 13px;
-        &:hover{
+
+        &:hover {
           color: #fff;
         }
       }
     }
-    .top-other{
+
+    .top-other {
       display: flex;
       align-items: center;
       font-size: 15px;
       color: #f6f6f6;
-      *{
+
+      * {
         margin-right: 10px;
       }
     }
   }
 }
 
-.sider-box{
+.sider-box {
   height: calc(100vh - 100px) !important;
   border-right: 0 !important;
-  background: rgb(237,237,237) !important;
+  background: rgb(237, 237, 237) !important;
 }
 
 .site-layout-background {

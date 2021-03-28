@@ -12,7 +12,7 @@ function Banner (props) {
 
       {props.bannerList.map((item) => {
         return (<div key={item.bannerId}>
-          <img alt={item.bannerId} style={contentType} src={item.pic} />
+          <img alt={item.bannerId} style={contentType} src={item.pic}/>
         </div>)
       })}
     </Carousel>

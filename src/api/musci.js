@@ -1,5 +1,5 @@
-import {get} from '../utils/http'
+import { get } from '../utils/http'
 
-export const getNewMusic=(params)=>{
-  return get('top/song',params)
+export const getNewMusic = (params) => {
+  return get('top/song', params)
 }
