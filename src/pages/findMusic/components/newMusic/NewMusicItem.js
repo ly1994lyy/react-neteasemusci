@@ -29,8 +29,8 @@ function NewMusicItem (props) {
       <div>
         <div>{name}</div>
         <div className="artist-name">{
-          artists.length > 1 ? artists.reduce((name, e) => {
-            return name + '/' + e.name
+          artists.length > 1 ? artists.reduce((name, e, index) => {
+            return index === 0 ? name + e.name : name + '/' + e.name
           }, '') : artists[0].name
         }</div>
       </div>

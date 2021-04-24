@@ -4,7 +4,7 @@ import Main from './components/main/Main'
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
 import RightContent from './components/content/RightContent'
 import HomePage from './pages/findMusic/HomePage'
-import HomeNewMusic from './pages/findMusic/HomeNewMusic'
+import HomeNewMusic from './pages/findMusic/homeNewMusic/HomeNewMusic'
 
 function App () {
   return (
