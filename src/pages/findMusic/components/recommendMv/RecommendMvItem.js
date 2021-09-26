@@ -20,7 +20,7 @@ function RecommendMvItem (props) {
   const { picUrl, artistName, playCount, name } = props
   return (
     <div>
-      <img src={picUrl} style={{ height: '100%', width: '100%', position: 'relative' }} alt={picUrl}/>
+      <img className='bd-5' src={picUrl} style={{ height: '100%', width: '100%', position: 'relative' }} alt={picUrl}/>
       <div style={playCountType}>
         <CaretRightOutlined/>
         {playCount}

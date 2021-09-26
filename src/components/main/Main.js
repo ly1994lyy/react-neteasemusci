@@ -9,6 +9,7 @@ import {
 } from '@ant-design/icons'
 import React from 'react'
 import './index.less'
+import {Link} from 'react-router-dom'
 
 const { SubMenu } = Menu
 const { Header, Sider, Footer } = Layout
@@ -48,7 +49,9 @@ function Main (props) {
             className="sider-box"
           >
 
-            <Menu.Item key="5">发现音乐</Menu.Item>
+            <Menu.Item key="5">
+              <Link to='/home/index'>发现音乐</Link>
+            </Menu.Item>
             <Menu.Item key="6">私人FM</Menu.Item>
             <Menu.Item key="7" icon={<YoutubeOutlined/>}>视频</Menu.Item>
             <Menu.Item key="8" icon={<TeamOutlined/>}>朋友</Menu.Item>

@@ -12,11 +12,11 @@ export const navList = [
     title: '欧美'
   },
   {
-    type: '8',
+    type: '16',
     title: '韩国'
   },
   {
-    type: '16',
+    type: '8',
     title: '日本'
   },
 ]

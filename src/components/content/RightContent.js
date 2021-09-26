@@ -15,7 +15,7 @@ function RightContent (props) {
             parent === 'Home' ? <HomeNav/> : <Fragment/>
           }
           <div className="top-other">
-            <Input placeholder="搜索" allowClear prefix={<SearchOutlined/>}/>
+            <Input className="input-btn" placeholder="搜索" allowClear prefix={<SearchOutlined/>}/>
             <SettingOutlined/>
             <MailOutlined/>
             <SkinOutlined/>

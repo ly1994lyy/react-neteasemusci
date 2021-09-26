@@ -9,3 +9,13 @@ export const getHomePage = () => {
 export const getRecommendMv = () => {
   return get('personalized/mv')
 }
+
+//获取排行榜
+export const getLeaderBoard = () => {
+  return get('toplist')
+}
+
+// 获取首页推荐MV
+export const getDetailList = (params) => {
+  return get('playlist/detail', params)
+}
