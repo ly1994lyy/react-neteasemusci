@@ -1,0 +1,52 @@
+.mainContainer{
+  display: flex;
+  height: calc(100vh - 65px);
+  .mainLeft{
+    padding: 20px 20px;
+    width: 250px;
+    background: @nav-background-color;
+    overflow: auto;
+    .headerContainer{
+      display: flex;
+      align-items: center;
+      .logo{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        cursor: pointer;
+      }
+      .title{
+        cursor: pointer;
+        margin-left: 10px;
+        color: #eee;
+        display: flex;
+        .word{
+          margin: 0 2px;
+        }
+      }
+    }
+    .nav{
+      margin-top: 20px;
+      .menu{
+        background: 0 !important;
+        color: #eee;
+      }
+    }
+    
+  }
+  .mainRight{
+    flex: 1;
+    overflow: auto;
+    background: @main-right-background-color;
+  }
+  .player{
+    position: fixed;
+    height: 65px;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #6e5555;
+    background-color: #2D2D38;
+    width: 100%;
+  }
+  
+}
