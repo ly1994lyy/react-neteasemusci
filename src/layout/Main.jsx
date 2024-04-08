@@ -4,6 +4,7 @@ import logo from '@/assets/logo.svg'
 import LayoutHeader from './header'
 import Content from './content'
 import Player from './player'
+import React from 'react'
 
 function getItem (label, key, icon, children, type) {
   return {

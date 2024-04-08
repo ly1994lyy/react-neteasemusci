@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom'
 
 function Content () {
   return (
-    <div style={{ marginTop: '60px', color: '#fff' }}>
+    <div className="layout-content">
       <Outlet />
     </div>
   )

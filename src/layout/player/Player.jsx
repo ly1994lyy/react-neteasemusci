@@ -21,7 +21,7 @@ const Play = () => {
 
   return (
     <div className='flex'>
-      <audio ref={audioRef} src={songUrl} onCanPlay={getDuration} onTimeUpdate={getCurrentTime} controls />
+      <audio ref={audioRef} src={songUrl} onCanPlay={getDuration} onTimeUpdate={getCurrentTime} />
       <div>
         <SvgIcon name="like" color="#C5C5C8" />
       </div>
