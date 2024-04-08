@@ -3,7 +3,7 @@ import propTypes from 'prop-types'
 
 const SvgIcon = ({ name, width = 35, height = 35, color = '' }) => {
   return (
-    <svg width={width} height={height}>
+    <svg width={width} height={height} className="cursor">
       <use href={`#icon-${name}`} fill={color} ></use>
     </svg>
   )

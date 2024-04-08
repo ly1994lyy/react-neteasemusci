@@ -5,7 +5,7 @@ import LayoutHeader from './header'
 import Content from './content'
 import Player from './player'
 
-function getItem(label, key, icon, children, type) {
+function getItem (label, key, icon, children, type) {
   return {
     key,
     icon,
@@ -34,7 +34,7 @@ const items2 = [
 
 const titles = ['网', '易', '云', '音', '乐']
 
-function Main() {
+function Main () {
   return (
     <div className={types.mainContainer}>
       <div className={types.mainLeft}>
