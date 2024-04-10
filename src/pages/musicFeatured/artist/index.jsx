@@ -54,11 +54,11 @@ const Artist = () => {
                     })
                 }
             </div>
-            <div>
+            <Row>
                 {artistList.map(e => {
                   return <ArtistListItem key={e.id} info={e} />
                 })}
-            </div>
+            </Row>
         </div>
   )
 }
