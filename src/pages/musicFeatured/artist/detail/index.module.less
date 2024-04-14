@@ -1,0 +1,81 @@
+.detailContainer{
+  padding: 10px 20px;
+  .headerContainer{
+    display: flex;
+    .img{
+      height: 150px;
+      border-radius: 50%;
+    }
+    .rightContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-left: 40px;
+      .name{
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .alias{
+        font-size: 14px;
+        color: #929295;
+      }
+      .btn{
+        button:first-child{
+          margin-right: 10px;
+        }
+
+      }
+    }
+  }
+  .tabs{
+    margin: 20px;
+    display: flex;
+    .tabItem{
+      color: #b19595;
+      margin-right: 20px;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+      &:hover{
+        color: #fff;
+      }
+    }
+    .active{
+      color: #fff;
+      &::after{
+        content: '';
+        width: 20px;
+        height: 5px;
+        display: block;
+        margin: 5px auto;
+        background-color: red;
+        border-radius: 3px;
+      }
+    }
+  }
+  .songsTable{
+    height: 60px;
+    padding-left: 10px;
+    &:hover{
+      background-color: #2b2b2b;
+      border-radius: 10px;
+    }
+    .title{
+      display: flex;
+      .authorImg{
+        width: 40px;
+        border-radius: 5px;
+      }
+      .info{
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .songsTableHeader{
+    border-bottom: 1px solid #2e2020;
+    padding-left: 10px;
+    height: 35px;
+  }
+}

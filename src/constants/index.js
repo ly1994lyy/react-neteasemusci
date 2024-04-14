@@ -24,8 +24,18 @@ const ARTIST_TYPE = [
   { label: '乐队组合', value: '3' }
 ]
 
+// 歌手详情页tab
+const ARTIST_DETAIL_TAB = [
+  { label: '歌曲', path: 'songs' },
+  { label: '专辑', path: 'albums' },
+  { label: 'MV', path: 'mv' },
+  { label: '歌手详情', path: 'desc' },
+  { label: '相似歌手', path: 'likeArtists' }
+]
+
 export {
   FEATURED_TYPE,
   ARTIST_LANGUAGE_TYPE,
-  ARTIST_TYPE
+  ARTIST_TYPE,
+  ARTIST_DETAIL_TAB
 }

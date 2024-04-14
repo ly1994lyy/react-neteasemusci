@@ -9,15 +9,13 @@ const Play = () => {
     duration,
     current,
     songUrl,
-    changSong,
+    setSongId,
+    songId,
+    play,
     playOrParse,
     getCurrentTime,
     getDuration
   } = usePlay()
-
-  useEffect(() => {
-    changSong('2108827013')
-  }, [])
 
   return (
     <div className='flex'>
