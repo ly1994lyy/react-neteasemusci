@@ -1,7 +1,7 @@
 import moment from 'moment'
 
-export const handleDuration = (duration) => {
-  const time = moment.duration(duration, 'ms')
+export const handleDuration = (duration, unit = 'ms') => {
+  const time = moment.duration(duration, unit)
   const hour = time.hours()
   const minute = time.minutes()
   const second = time.seconds()

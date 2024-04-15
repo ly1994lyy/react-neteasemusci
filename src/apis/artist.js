@@ -26,3 +26,12 @@ export const getArtistSongs = (params) => {
     params
   })
 }
+
+// 获取歌手的歌曲
+export const getArtistAlbums = (params) => {
+  return request({
+    method: 'get',
+    url: '/artist/album',
+    params
+  })
+}

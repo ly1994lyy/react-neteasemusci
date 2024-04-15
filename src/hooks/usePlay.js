@@ -40,9 +40,6 @@ const usePlay = () => {
     audioRef.current.volume = val
   }
 
-  useEffect(() => {
-    console.log(songUrl)
-  }, [songId])
   return {
     isPlay,
     audioRef,

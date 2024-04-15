@@ -10,7 +10,7 @@ const ArtistSongs = () => {
   const [songs, setSongs] = useState([])
   const { id } = useParams()
 
-  const { setSongId, play } = usePlay()
+  const { setSongId } = usePlay()
 
   const querySongs = async () => {
     try {

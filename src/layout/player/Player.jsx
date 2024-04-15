@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import SvgIcon from '@/components/SvgIcon'
 import { usePlay } from '@/hooks'
+import { handleDuration } from '@/utils/handleTime.js'
 
 const Play = () => {
   const {
@@ -17,9 +18,13 @@ const Play = () => {
     getDuration
   } = usePlay()
 
+  useEffect(() => {
+    setSongId('2108827013')
+  }, [])
+
   return (
     <div className='flex'>
-      <audio ref={audioRef} src={songUrl} onCanPlay={getDuration} onTimeUpdate={getCurrentTime} />
+      <audio ref={audioRef} src={songUrl} onCanPlay={getDuration} onTimeUpdate={getCurrentTime} controls />
       <div>
         <SvgIcon name="like" color="#C5C5C8" />
       </div>
@@ -34,9 +39,9 @@ const Play = () => {
       <div>
       <SvgIcon name="next" color="#C5C5C8" />
       </div>
-      <div>{current}</div>
+      <div>{handleDuration(current, 's')}</div>
       <div>-----</div>
-      <div>{duration}</div>
+      <div>{handleDuration(duration, 's')}</div>
     </div>
   )
 }
