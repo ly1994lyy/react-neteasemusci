@@ -4,13 +4,13 @@ import { useParams } from 'react-router-dom'
 import { Col, Row } from 'antd'
 import { handleDuration } from '@/utils/handleTime.js'
 import types from '../index.module.less'
-import { usePlay } from '@/hooks/index.js'
+import { usePlayStore } from '@/store/playStore.js'
 
 const ArtistSongs = () => {
   const [songs, setSongs] = useState([])
   const { id } = useParams()
 
-  const { setSongId } = usePlay()
+  const changeID = usePlayStore((state) => state.changeSongId)
 
   const querySongs = async () => {
     try {
@@ -28,7 +28,7 @@ const ArtistSongs = () => {
   }
 
   const playMusic = (id) => {
-    setSongId(id)
+    changeID(id)
   }
 
   useEffect(() => {

@@ -1,7 +1,8 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useMemo } from 'react'
 import SvgIcon from '@/components/SvgIcon'
 import { usePlay } from '@/hooks'
 import { handleDuration } from '@/utils/handleTime.js'
+import { usePlayStore } from '@/store/playStore.js'
 
 const Play = () => {
   const {
@@ -9,22 +10,17 @@ const Play = () => {
     audioRef,
     duration,
     current,
-    songUrl,
-    setSongId,
-    songId,
-    play,
     playOrParse,
     getCurrentTime,
     getDuration
   } = usePlay()
 
-  useEffect(() => {
-    setSongId('2108827013')
-  }, [])
+  const sId = usePlayStore((state) => state.songId)
+  const songUrl = useMemo(() => `http://music.163.com/song/media/outer/url?id=${sId}.mp3`, [sId])
 
   return (
     <div className='flex'>
-      <audio ref={audioRef} src={songUrl} onCanPlay={getDuration} onTimeUpdate={getCurrentTime} controls />
+      <audio ref={audioRef} src={songUrl} onCanPlay={getDuration} onTimeUpdate={getCurrentTime} />
       <div>
         <SvgIcon name="like" color="#C5C5C8" />
       </div>

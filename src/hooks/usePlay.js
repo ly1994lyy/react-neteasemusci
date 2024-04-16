@@ -1,23 +1,19 @@
-import { useState, useRef, useMemo, useEffect } from 'react'
+import { useState, useRef } from 'react'
 
 let audioRef
-let songUrl
 const usePlay = () => {
   audioRef = useRef()
   const [duration, setDuration] = useState(0)
   const [current, setCurrent] = useState(0)
-  const [songId, setSongId] = useState('')
-  const [isPlay, setIsplay] = useState(false)
-
-  songUrl = useMemo(() => `http://music.163.com/song/media/outer/url?id=${songId}.mp3`, [songId])
+  const [isPlay, setIsPlay] = useState(false)
 
   const parse = () => {
-    setIsplay(false)
+    setIsPlay(false)
     audioRef.current.pause()
   }
 
   const play = () => {
-    setIsplay(true)
+    setIsPlay(true)
     audioRef.current.play()
   }
   const playOrParse = () => {
@@ -34,6 +30,7 @@ const usePlay = () => {
 
   const getDuration = () => {
     setDuration(audioRef.current.duration)
+    play()
   }
 
   const changeVolume = (val) => {
@@ -45,9 +42,6 @@ const usePlay = () => {
     audioRef,
     duration,
     current,
-    songUrl,
-    setSongId,
-    songId,
     playOrParse,
     getCurrentTime,
     getDuration,
