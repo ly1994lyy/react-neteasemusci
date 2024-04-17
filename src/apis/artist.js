@@ -35,3 +35,21 @@ export const getArtistAlbums = (params) => {
     params
   })
 }
+
+// 获取歌手的歌曲
+export const getArtistMV = (params) => {
+  return request({
+    method: 'get',
+    url: '/artist/mv',
+    params
+  })
+}
+
+// 获取歌手的歌手详情
+export const getArtistDesc = (params) => {
+  return request({
+    method: 'get',
+    url: '/artist/desc',
+    params
+  })
+}

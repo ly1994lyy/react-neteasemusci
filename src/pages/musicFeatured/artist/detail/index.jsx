@@ -29,7 +29,7 @@ const ArtistDetail = () => {
 
   const goArtistTab = (path) => {
     setTab(path)
-    navigate(`/artist/${id}/${path}`)
+    navigate(`/artist/${id}/${path}`, { state: { artistName: artistInfo.name } })
   }
 
   useEffect(() => {
