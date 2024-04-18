@@ -53,3 +53,12 @@ export const getArtistDesc = (params) => {
     params
   })
 }
+
+// 获取相似歌手
+export const getArtistLikes = (params) => {
+  return request({
+    method: 'get',
+    url: '/simi/artist',
+    params
+  })
+}

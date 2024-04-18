@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { ARTIST_LANGUAGE_TYPE, ARTIST_TYPE } from '@/constants/index.js'
 import types from './index.module.less'
-import { Button, Col, Row } from 'antd'
+import { Button, Row } from 'antd'
 import { getArtistList } from '@/apis/artist.js'
-import ArtistListItem from '@/pages/musicFeatured/artist/ArtistListItem.jsx'
+import ArtistCover from '@/components/ArtistCover/index.jsx'
 
 const Artist = () => {
   const [area, setArea] = useState('-1')
@@ -56,7 +56,7 @@ const Artist = () => {
             </div>
             <Row>
                 {artistList.map(e => {
-                  return <ArtistListItem key={e.id} info={e} />
+                  return <ArtistCover key={e.id} info={e} />
                 })}
             </Row>
         </div>
